@@ -1,7 +1,7 @@
 
 import React from "react"
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import { Link } from "react-router-dom";
 
 
 
@@ -26,29 +26,44 @@ const Navbar=()=>(
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
               <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                 <li className="nav-item">
-                  <a className="nav-link fw-bold" href="#">
+<Link className="nav-link fw-bold" to='/'>
+Home
+</Link>
+                  {/* <a className="nav-link fw-bold" href="#">
                     Home
-                  </a>
+                  </a> */}
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link fw-bold" href="#">
+<Link className="nav-link fw-bold" to='/TVShows'>
+TV Shows
+</Link>
+                  {/* <a className="nav-link fw-bold" href="#">
                     TV Shows
-                  </a>
+                  </a> */}
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link fw-bold" href="#">
+<Link className="nav-link fw-bold" to=''>
+Movies
+</Link>
+                  {/* <a className="nav-link fw-bold" href="#">
                     Movies
-                  </a>
+                  </a> */}
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link fw-bold" href="#">
+<Link className="nav-link fw-bold" to=''>
+Recently Added
+</Link>
+                  {/* <a className="nav- fw-bold fw-bold" href="#">
                     Recently Added
-                  </a>
+                  </a> */}
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link fw-bold" href="#">
+<Link className="nav-link fw-bold" to=''>
+My List
+</Link>
+                  {/* <a className="nav- fw-bold fw-bold" href="#">
                     My List
-                  </a>
+                  </a> */}
                 </li>
               </ul>
               <div className="d-flex align-items-center">

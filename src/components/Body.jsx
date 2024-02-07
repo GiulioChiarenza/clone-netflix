@@ -1,4 +1,5 @@
 import { Component } from "react";
+import { Link } from "react-router-dom";
 
 class Body extends Component {
     state = {
@@ -39,11 +40,13 @@ class Body extends Component {
           <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-4 row-cols-xl-6 mb-4">
             {movies.map((movie) => (
               <div key={movie.imdbID} className="col mb-2 text-center px-1">
+                <Link to={'/MovieDetails/'+ movie.imdbID}>
                 <img className="img-fluid" src={movie.Poster} alt={movie.Title} />
+            </Link>
               </div>
             ))}
           </div>
-        );
+         );
       };
 
     render(){
